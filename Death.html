@@ -1,0 +1,186 @@
+<html>
+  <head>
+    <title>DEATH DATE</title>
+    <link rel="icon" type="image/png" href="Devil.png">
+    <style>
+      body{
+        background-color: rgb(0,0,0);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%2300FF30' stroke-width='1'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23FF186E'%3E%3Ccircle cx='769' cy='229' r='5'/%3E%3Ccircle cx='539' cy='269' r='5'/%3E%3Ccircle cx='603' cy='493' r='5'/%3E%3Ccircle cx='731' cy='737' r='5'/%3E%3Ccircle cx='520' cy='660' r='5'/%3E%3Ccircle cx='309' cy='538' r='5'/%3E%3Ccircle cx='295' cy='764' r='5'/%3E%3Ccircle cx='40' cy='599' r='5'/%3E%3Ccircle cx='102' cy='382' r='5'/%3E%3Ccircle cx='127' cy='80' r='5'/%3E%3Ccircle cx='370' cy='105' r='5'/%3E%3Ccircle cx='578' cy='42' r='5'/%3E%3Ccircle cx='237' cy='261' r='5'/%3E%3Ccircle cx='390' cy='382' r='5'/%3E%3C/g%3E%3C/svg%3E");
+        background-color: white;
+      }
+      
+      #spin{
+        display: flex;
+        justify-content: center;  
+        align-items: center;
+        color: black;
+        font-size: 100px;
+        animation: rot 5s linear infinite;
+      }
+      @keyframes rot{
+        from{
+          transform: rotate(0deg);
+        }
+        to{
+          transform: rotate(360deg);
+        }
+      }
+      h1{
+        
+        border: 4px solid ;
+        border-bottom-color: #3c3dc6;
+        border-right-color: #3c3dc6;
+        border-left-color: #c63c60;
+        border-top-color: #c63c60;
+        font-family: Times New Roman;
+        color: black;
+        font-size: 31px;
+      }
+      #user{
+        background-color: #ffc2d2;
+        height: 40px;
+        width: 250px;;
+      }
+
+/* From Uiverse.io by shah1345 */ 
+.button2 {
+  display: inline-block;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  color: #090909;
+  padding: 0.7em 1.7em;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  border: 1px solid #e8e8e8;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.button2:active {
+  color: #666;
+  box-shadow: inset 4px 4px 12px #c5c5c5, inset -4px -4px 12px #ffffff;
+}
+
+.button2:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #009087;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+}
+
+.button2:hover {
+  color: #ffffff;
+  border: 1px solid #009087;
+}
+
+.button2:hover:before {
+  top: -35%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+
+.button2:hover:after {
+  top: -45%;
+  background-color: #009087;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+}
+#important{
+  font-size: 20px;
+  font-family: Monospace;
+}
+
+    </style>
+  </head>
+  <body>
+    <div id="p-spin">
+      <div id="spin">
+      ⛦
+      </div>
+    </div>
+    <h1 id="change">DEATH CALCULATOR </h1>
+    
+    <h5>
+      This mysterious tool will give you the answer to the most important question of your life - when will your time come.</h5>
+<h5>
+Don't wait any longer, go to the Death Form, enter your (or someone else's) details and click calculate. The site will process your data and calculate the Death Date.
+</h5>
+<h5>
+Remember...you're using this site at your own risk!
+    </h5>
+    <h4>
+      Instructions to get the date
+    </h4>
+    <li>Enter your name</li><br>
+    <li>Enter your D.O.B</li>
+    <br><br><br><br>
+    <fieldset>
+    <br>
+    <legend>Here to find it</legend>
+    <br>
+    <spam id=important>
+      Please fill out this form, don't be afraid to share your data - it's necessary only for your <b>Death Date calculations</b>, the only thing you should be concerned about is the time you have left...
+    </spam>
+    <br><br>
+    <input type="text" id="user" required placeholder="enter your name">
+ 
+    <br><br>
+    <input type="date" id="myDatePicker" required>
+    <br><br>
+    <button type="submit" class="button2" onclick="datesaving()">continue →</button>
+    <br><br>
+    <spam id="scroll"> </spam>
+    </fieldset>
+    
+    <h3 id="dd"></h3>
+<script>
+  
+  function datesaving(){
+    const nameinput = document.getElementById('user').value;
+    
+    const dateinput = document.getElementById("myDatePicker").value;
+    
+    const [year,month,day] = dateinput.split("-")
+    
+    console.log(day);
+    console.log(month);
+    console.log(year);
+    console.log(nameinput)
+    
+    let spam = document.getElementById('scroll');
+    
+    spam.textContent = 'SCROLL DOWN';
+    if (nameinput === "" || dateinput === ""){
+      alert("Please fill the details");
+      return;
+    }
+}
+</script>
+  </body>
+  </html>
+
